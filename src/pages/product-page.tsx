@@ -511,9 +511,9 @@ export default function ProductPage() {
         {/* Price & Buying options */}
         <div className="px-4 pb-6">
           <div className="text-sm text-gray-400 line-through">R$ 119,00</div>
-          <div className="text-4xl font-normal text-foreground">R$ 39<span className="text-xl align-top">,90</span></div>
+          <div className="text-4xl font-normal text-foreground">R$ 49<span className="text-xl align-top">,00</span></div>
           <div className="mt-1 text-[15px]">
-            em <span className="text-ml-green font-medium">5x R$ 7,98 sem juros</span> no cartão
+            em <span className="text-ml-green font-medium">5x R$ 9,80 sem juros</span> no cartão
           </div>
 
           <div className="mt-4 flex items-start gap-2">
@@ -767,8 +767,8 @@ export default function ProductPage() {
         <div className="flex gap-3 overflow-x-auto pb-2">
           {[
             {
-              name: 'Kit Álbum Copa Do Mundo 2026 Capa Mole + 250 Figurinhas Panini - 35 Envelopes',
-              price: 'R$ 49,00',
+              name: 'Kit Álbum Copa Do Mundo 2026 Capa Mole + 180 Figurinhas Panini - 25 Envelopes',
+              price: 'R$ 39,90',
               img: img('/images/sugg-1.webp'),
             },
             {
@@ -998,10 +998,10 @@ export default function ProductPage() {
         <div className="flex flex-col shrink-0">
           <div className="flex items-start gap-0.5 leading-none">
             <span className="text-xs font-medium text-gray-700 mt-1">R$</span>
-            <span className="text-3xl font-semibold text-gray-900 leading-none">39</span>
-            <span className="text-xs font-semibold text-gray-900 leading-none mt-0.5">,90</span>
+            <span className="text-3xl font-semibold text-gray-900 leading-none">49</span>
+            <span className="text-xs font-semibold text-gray-900 leading-none mt-0.5">,00</span>
           </div>
-          <span className="text-[11px] text-ml-green font-medium leading-tight mt-0.5">5x R$ 7,98 sem juros</span>
+          <span className="text-[11px] text-ml-green font-medium leading-tight mt-0.5">5x R$ 9,80 sem juros</span>
         </div>
         <Button onClick={handleBuyNow} className="flex-1 bg-ml-blue hover:bg-ml-blue/90 text-white rounded-xl h-12 font-semibold text-base">
           Comprar agora
@@ -1077,7 +1077,7 @@ export default function ProductPage() {
                 <div className="px-4 py-4 space-y-2 bg-white mt-2">
                   <div className="flex justify-between text-sm text-gray-500">
                     <span>Subtotal ({cartCount} {cartCount === 1 ? 'item' : 'itens'})</span>
-                    <span>R$ {(39.90 * cartCount).toFixed(2).replace('.', ',')}</span>
+                    <span>R$ {(49.00 * cartCount).toFixed(2).replace('.', ',')}</span>
                   </div>
                   <div className="flex justify-between text-sm text-green-600 font-medium">
                     <span>Frete</span>
@@ -1085,10 +1085,10 @@ export default function ProductPage() {
                   </div>
                   <div className="flex justify-between text-base font-bold text-gray-900 pt-1 border-t border-gray-100">
                     <span>Total</span>
-                    <span>R$ {(39.90 * cartCount).toFixed(2).replace('.', ',')}</span>
+                    <span>R$ {(49.00 * cartCount).toFixed(2).replace('.', ',')}</span>
                   </div>
                   <p className="text-xs text-green-600">
-                    Em 5x de R$ {(39.90 * cartCount / 5).toFixed(2).replace('.', ',')} sem juros
+                    Em 5x de R$ {(49.00 * cartCount / 5).toFixed(2).replace('.', ',')} sem juros
                   </p>
                 </div>
               </>
